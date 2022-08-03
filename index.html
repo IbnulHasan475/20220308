@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Table Counter</h1>
+<input type="number" id="tableValue"/>
+<br>
+<br>
+<button onclick="createTable()">create table</button>
+<script>
+    function createTable(){
+    let table = document.getElementById("tableValue").value;
+    for (let index = 1; index <= 1500; index++){
+        document.write(
+    "<h1>" + table + " x " + index + " = " + table * index + "</h1>"        
+    )  
+    }        }
+
+</script>
+</body>
+</html>
